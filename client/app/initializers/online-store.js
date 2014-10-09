@@ -6,10 +6,10 @@ var CustomOnlineAdapter = DS.FirebaseAdapter.extend({
   firebase: new Firebase('https://qbe.firebaseio.com/quiz')
 });
 
-/*var CustomOnlineSerializer = DS.RESTSerializer.extend();
-var CustomOnlineAdapter = DS.RESTAdapter.extend({
-  namespace: 'api'
-});*/
+// var CustomOnlineSerializer = DS.RESTSerializer.extend();
+// var CustomOnlineAdapter = DS.RESTAdapter.extend({
+//   namespace: 'api/v1'
+// });
 
 var OnlineStore = DS.Store.extend({
   adapterFor: function() {
